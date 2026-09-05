@@ -21,21 +21,21 @@ mod:RegisterEnableMob(
 )
 if mod:Retail() then -- Midnight+
 	mod:SetAuraData({
-		{1305201}, -- Excavating Blast
-		{1307205}, -- Earthbound's Imprint
-		{1305225, soundOnAppliedDose = "none"}, -- Tectonic Strike
-		{1305234, soundOnAppliedDose = "none"}, -- Cold Claws
-		{373593}, -- Frozen Solid
-		{372047}, -- Steel Barrage
-		{374927, soundOnApplied = "underyou", note = CL.debuffUnderYouNote}, -- Wall of Flames
-		{373693}, -- Living Bomb
-		{385536}, -- Flaming Barrage
-		{373692}, -- Inferno
-		{395292}, -- Fire Maw
-		{392641, soundOnAppliedDose = "none"}, -- Rolling Thunder
-		{1310599, soundOnAppliedDose = "none"}, -- Electrical Discharge
-		{1307372, soundOnApplied = "underyou", note = CL.debuffUnderYouNote}, -- Fiery Demise
-		{1306366}, -- Lightning Torrent
+		{1305201, tip = "You've been hit by an Excavating Blast."}, -- Excavating Blast
+		{1307205, tip = "You've been marked with the Earthbound's Imprint."}, -- Earthbound's Imprint
+		{1305225, soundOnAppliedDose = "none", tip = "A stacking debuff from Tectonic Strike, avoid letting it build too high."}, -- Tectonic Strike
+		{1305234, soundOnAppliedDose = "none", tip = "A stacking debuff from Cold Claws, avoid letting it build too high."}, -- Cold Claws
+		{373593, mechanic = "frozen", tip = "You've been Frozen Solid and cannot act until it wears off."}, -- Frozen Solid
+		{372047, tip = "You've been hit by Steel Barrage."}, -- Steel Barrage
+		{374927, soundOnApplied = "underyou", note = CL.debuffUnderYouNote, tip = "You're standing in a Wall of Flames, move out of it."}, -- Wall of Flames
+		{373693, tip = "You're carrying a Living Bomb, move away from other players."}, -- Living Bomb
+		{385536, tip = "You've been hit by a Flaming Barrage."}, -- Flaming Barrage
+		{373692, tip = "You're standing in an Inferno, move out of it."}, -- Inferno
+		{395292, tip = "You've been caught in a Fire Maw."}, -- Fire Maw
+		{392641, soundOnAppliedDose = "none", tip = "A stacking debuff from Rolling Thunder, avoid letting it build too high."}, -- Rolling Thunder
+		{1310599, soundOnAppliedDose = "none", tip = "A stacking debuff from Electrical Discharge, avoid letting it build too high."}, -- Electrical Discharge
+		{1307372, soundOnApplied = "underyou", note = CL.debuffUnderYouNote, tip = "You're standing in a Fiery Demise, move out of it."}, -- Fiery Demise
+		{1306366, tip = "You've been caught in a Lightning Torrent."}, -- Lightning Torrent
 	})
 end
 

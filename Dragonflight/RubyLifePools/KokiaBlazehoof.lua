@@ -79,11 +79,11 @@ end
 
 if mod:Retail() then -- Midnight+
 	mod:SetAuraData({
-		{372865, duration = 15, note = CL.debuffTargetedNote:format(mod:SpellName(372864))}, -- Ritual of Blazebinding
-		{384823, duration = 8, soundOnAppliedDose = "none", note = CL.debuffGroupAfterCastNote:format(mod:SpellName(384823))}, -- Inferno
-		{372820, soundOnApplied = "underyou", note = CL.debuffUnderYouNote}, -- Scorched Earth
-		{372858, duration = 3, note = CL.debuffTankAfterCastNote:format(mod:SpellName(372858))}, -- Searing Blows
-		{372860, duration = 8, soundOnAppliedDose = "none", note = CL.debuffDotAfterCastNote:format(mod:SpellName(372858))}, -- Searing Wounds
+		{372865, duration = 15, note = CL.debuffTargetedNote:format(mod:SpellName(372864)), tip = "You've been targeted by Ritual of Blazebinding, get ready to move away from the raid."}, -- Ritual of Blazebinding
+		{384823, duration = 8, soundOnAppliedDose = "none", note = CL.debuffGroupAfterCastNote:format(mod:SpellName(384823)), tip = "A raid-wide debuff from Inferno, heal through the damage."}, -- Inferno
+		{372820, soundOnApplied = "underyou", note = CL.debuffUnderYouNote, tip = "You're standing on Scorched Earth, move out of it."}, -- Scorched Earth
+		{372858, duration = 3, note = CL.debuffTankAfterCastNote:format(mod:SpellName(372858)), tip = "The tank was hit by Searing Blows."}, -- Searing Blows
+		{372860, duration = 8, soundOnAppliedDose = "none", note = CL.debuffDotAfterCastNote:format(mod:SpellName(372858)), tip = "A DoT left behind by Searing Blows, heal through it."}, -- Searing Wounds
 	})
 end
 

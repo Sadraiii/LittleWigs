@@ -135,11 +135,11 @@ end
 
 if mod:Retail() then -- Midnight+
 	mod:SetAuraData({
-		{381515, duration = 30, dispel = "magic", soundOnAppliedDose = "none", note = CL.debuffTankAfterCastNote:format(mod:SpellName(381512))}, -- Stormslam
-		{381518, note = CL.debuffGroupAfterCastNote:format(mod:SpellName(381517))}, -- Winds of Change
-		{381862, duration = 6, note = CL.debuffDotAfterCastNote:format(mod:SpellName(381862))}, -- Inferno Spit
-		{384773, soundOnApplied = "underyou", note = CL.debuffUnderYouNote}, -- Flaming Embers
-		{381526, soundOnApplied = "alarm", note = CL.debuffHitByCastNote:format(mod:SpellName(381525))}, -- Roaring Firebreath
+		{381515, duration = 30, dispel = "Magic", soundOnAppliedDose = "none", note = CL.debuffTankAfterCastNote:format(mod:SpellName(381512)), tip = "A stacking tank debuff from Stormslam, dispel it or requires a taunt swap at high stacks."}, -- Stormslam
+		{381518, note = CL.debuffGroupAfterCastNote:format(mod:SpellName(381517)), tip = "A raid-wide debuff from Winds of Change, heal through the damage."}, -- Winds of Change
+		{381862, duration = 6, note = CL.debuffDotAfterCastNote:format(mod:SpellName(381862)), tip = "A DoT from Inferno Spit, heal through it."}, -- Inferno Spit
+		{384773, soundOnApplied = "underyou", note = CL.debuffUnderYouNote, tip = "You're standing in Flaming Embers, move out of them."}, -- Flaming Embers
+		{381526, soundOnApplied = "alarm", note = CL.debuffHitByCastNote:format(mod:SpellName(381525)), tip = "You've been hit by Roaring Firebreath."}, -- Roaring Firebreath
 	})
 end
 

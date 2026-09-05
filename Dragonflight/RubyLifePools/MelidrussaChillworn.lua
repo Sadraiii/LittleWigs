@@ -85,11 +85,11 @@ end
 
 if mod:Retail() then -- Midnight+
 	mod:SetAuraData({
-		{385518, duration = 4.5, note = CL.debuffTargetedNote:format(mod:SpellName(1307308))}, -- Chillstorm
-		{397077, note = CL.debuffGroupAfterCastNote:format(mod:SpellName(1307308))}, -- Chillstorm
-		{372963, note = CL.debuffUnderYouNote}, -- Storm's Eye
-		{373688, duration = 3, soundOnAppliedDose = "none", note = CL.debuffGroupAfterCastNote:format(mod:SpellName(373686))}, -- Frost Overload
-		{384024, duration = 20, soundOnApplied = "warning", note = CL.debuffHitByCastNote:format(mod:SpellName(1307297))}, -- Hailbombs
+		{385518, duration = 4.5, note = CL.debuffTargetedNote:format(mod:SpellName(1307308)), tip = "You've been targeted by Chillstorm, get ready to move away from the raid."}, -- Chillstorm
+		{397077, note = CL.debuffGroupAfterCastNote:format(mod:SpellName(1307308)), tip = "A raid-wide debuff from Chillstorm, heal through the damage."}, -- Chillstorm
+		{372963, note = CL.debuffUnderYouNote, tip = "You're standing in Storm's Eye, move out of it."}, -- Storm's Eye
+		{373688, duration = 3, soundOnAppliedDose = "none", note = CL.debuffGroupAfterCastNote:format(mod:SpellName(373686)), tip = "A raid-wide debuff from Frost Overload, heal through the damage."}, -- Frost Overload
+		{384024, duration = 20, soundOnApplied = "warning", note = CL.debuffHitByCastNote:format(mod:SpellName(1307297)), tip = "You've been hit by Hailbombs."}, -- Hailbombs
 	})
 end
 
