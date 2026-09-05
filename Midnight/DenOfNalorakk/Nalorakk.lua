@@ -33,11 +33,11 @@ mod:SetRenames({
 --
 
 mod:SetAuraData({
-	{1242869, duration = 4, note = CL.debuffTargetedNote:format(mod:SpellName(1242860))}, -- Echoing Maul
-	{1243590, duration = 5, soundOnApplied = "alarm", soundOnAppliedDose = "none", note = CL.debuffPossibleAfterCastNote:format(mod:SpellName(1243569))}, -- Overwhelming Onslaught
-	{1255577, duration = 12, soundOnApplied = "alarm", soundOnAppliedDose = "alarm", note = CL.debuffUnderYouNote}, -- Spectral Slash
-	{1262253, duration = 30, mechanic = "infected", soundOnApplied = "alarm", soundOnAppliedDose = "alarm", note = CL.debuffGroupAfterCastNote:format(mod:SpellName(1262253))}, -- Demoralizing Scream
-	{1261781, soundOnApplied = "info"}, -- Defensive Stance
+	{1242869, duration = 4, note = CL.debuffTargetedNote:format(mod:SpellName(1242860)), tip = "You've been targeted by Echoing Maul, get ready for the hit."}, -- Echoing Maul
+	{1243590, duration = 5, soundOnApplied = "alarm", soundOnAppliedDose = "none", note = CL.debuffPossibleAfterCastNote:format(mod:SpellName(1243569)), tip = "A stacking debuff from Overwhelming Onslaught, avoid letting it build too high."}, -- Overwhelming Onslaught
+	{1255577, duration = 12, soundOnApplied = "alarm", soundOnAppliedDose = "alarm", note = CL.debuffUnderYouNote, dispel = "Magic", tip = "You're standing in a Spectral Slash, move out of it."}, -- Spectral Slash
+	{1262253, duration = 30, mechanic = "infected", soundOnApplied = "alarm", soundOnAppliedDose = "alarm", note = CL.debuffGroupAfterCastNote:format(mod:SpellName(1262253)), dispel = "Disease", tip = "A stacking infection from Demoralizing Scream, dispel it before it gets out of hand."}, -- Demoralizing Scream
+	{1261781, soundOnApplied = "info", tip = "Nalorakk has taken a defensive stance, reducing incoming damage."}, -- Defensive Stance
 })
 
 --------------------------------------------------------------------------------

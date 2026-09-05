@@ -35,13 +35,13 @@ mod:SetRenames({
 --
 
 mod:SetAuraData({
-	{1235549, duration = 16, dispel = "magic", soundOnApplied = "alert", note = CL.debuffPossibleAfterCastNote:format(mod:SpellName(1235548))}, -- Glacial Torment
-	{1235829, duration = 20, soundOnApplied = "warning", soundOnAppliedDose = "warning", note = CL.debuffFailureInterruptNote:format(mod:SpellName(1235829))}, -- Winter's Shroud
-	{1235841, soundOnApplied = "info", note = CL.debuffWalkIntoObjectNote:format(mod:SpellName(1235841))}, -- Snowdrift
-	{1263597, duration = 4, note = CL.debuffFailureNote}, -- Rime Detonation
-	{1235641, soundOnApplied = "underyou", note = CL.debuffUnderYouNote}, -- Raging Squall
-	{1236289, note = CL.debuffUnderYouNote}, -- Blizzard's Wrath
-	{1297749, soundOnApplied = "underyou", note = CL.debuffFailureSafeZoneNote}, -- Frozen Tempest
+	{1235549, duration = 16, dispel = "Magic", soundOnApplied = "alert", note = CL.debuffPossibleAfterCastNote:format(mod:SpellName(1235548)), tip = "A stacking frost DoT from Glacial Torment, dispel it before it gets out of hand."}, -- Glacial Torment
+	{1235829, duration = 20, soundOnApplied = "warning", soundOnAppliedDose = "warning", note = CL.debuffFailureInterruptNote:format(mod:SpellName(1235829)), tip = "You failed to interrupt Winter's Shroud, take extra care with the next cast."}, -- Winter's Shroud
+	{1235841, soundOnApplied = "info", note = CL.debuffWalkIntoObjectNote:format(mod:SpellName(1235841)), tip = "A Snowdrift has formed on the ground, avoid walking into it."}, -- Snowdrift
+	{1263597, duration = 4, note = CL.debuffFailureNote, tip = "You failed to avoid Rime Detonation and are taking the resulting damage."}, -- Rime Detonation
+	{1235641, soundOnApplied = "underyou", note = CL.debuffUnderYouNote, tip = "You're standing in a Raging Squall, move out of it."}, -- Raging Squall
+	{1236289, note = CL.debuffUnderYouNote, tip = "You're standing in Blizzard's Wrath, move out of it."}, -- Blizzard's Wrath
+	{1297749, soundOnApplied = "underyou", note = CL.debuffFailureSafeZoneNote, tip = "You failed to reach a safe zone before Frozen Tempest and are taking the resulting damage."}, -- Frozen Tempest
 })
 
 --------------------------------------------------------------------------------
