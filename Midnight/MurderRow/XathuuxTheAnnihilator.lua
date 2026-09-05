@@ -7,11 +7,11 @@ if not mod then return end
 mod:SetEncounterID(3103)
 mod:SetRespawnTime(30)
 mod:SetAuraData({
-	{473898}, -- Legion Strike
-	{1214637}, -- Axe Toss
-	{1214650}, -- Fel Lightning
-	{1295455}, -- Infernal Crush
-	{474234, soundOnApplied = "underyou"}, -- Burning Steps
+	{473898, tip = "You've been hit by Legion Strike."}, -- Legion Strike
+	{1214637, tip = "You've been thrown by Axe Toss, get ready to move back into position."}, -- Axe Toss
+	{1214650, dispel = "Magic", tip = "A lingering fel effect from Fel Lightning, dispel it or heal through it."}, -- Fel Lightning
+	{1295455, tip = "You've been crushed by Infernal Crush."}, -- Infernal Crush
+	{474234, soundOnApplied = "underyou", tip = "You're standing in Burning Steps, move out of it."}, -- Burning Steps
 })
 
 --------------------------------------------------------------------------------

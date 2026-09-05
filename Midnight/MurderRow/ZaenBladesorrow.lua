@@ -7,11 +7,11 @@ if not mod then return end
 mod:SetEncounterID(3102)
 mod:SetRespawnTime(30)
 mod:SetAuraData({
-	{474515, soundOnApplied = "alert"}, -- Heartstop Poison
-	{474545, soundOnRemoved = "info"}, -- Murder in a Row
-	{474740, soundOnApplied = "warning", note = CL.debuffFailureNote}, -- Murder in a Row
-	{1214352}, -- Fire Bomb
-	{1219631}, -- Fel-Infused Freight
+	{474515, soundOnApplied = "alert", dispel = "Poison", tip = "A stacking poison DoT from Heartstop Poison, dispel it before it gets out of hand."}, -- Heartstop Poison
+	{474545, soundOnRemoved = "info", tip = "You're marked for Murder in a Row, get ready to move out of the line."}, -- Murder in a Row
+	{474740, soundOnApplied = "warning", note = CL.debuffFailureNote, tip = "You failed to avoid Murder in a Row and are taking the resulting damage."}, -- Murder in a Row
+	{1214352, tip = "You've been targeted by Fire Bomb, move away from other players."}, -- Fire Bomb
+	{1219631, tip = "You're caught by Fel-Infused Freight, move out of its path."}, -- Fel-Infused Freight
 })
 
 --------------------------------------------------------------------------------

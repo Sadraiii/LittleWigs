@@ -7,8 +7,8 @@ if not mod then return end
 mod:SetEncounterID(3105)
 mod:SetRespawnTime(30)
 mod:SetAuraData({
-	{1214730}, -- Demonic Gateway
-	{1217384, soundOnApplied = "warning", note = CL.debuffFailureNote}, -- Malefic Wave
+	{1214730, tip = "A Demonic Gateway has opened nearby, be ready for the adds it summons."}, -- Demonic Gateway
+	{1217384, soundOnApplied = "warning", note = CL.debuffFailureNote, dispel = "Curse", tip = "You failed to avoid Malefic Wave, dispel this curse before it gets out of hand."}, -- Malefic Wave
 })
 
 --------------------------------------------------------------------------------

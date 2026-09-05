@@ -7,8 +7,8 @@ if not mod then return end
 mod:SetEncounterID(3101)
 mod:SetRespawnTime(30)
 mod:SetAuraData({
-	{1228198, soundOnApplied = "alert"}, -- Corroding Spittle
-	{1253813}, -- Fel Spray
+	{1228198, soundOnApplied = "alert", dispel = "Poison", tip = "A corrosive DoT from Corroding Spittle, dispel it before it gets out of hand."}, -- Corroding Spittle
+	{1253813, dispel = "Magic", tip = "A lingering fel effect from Fel Spray, dispel it or heal through it."}, -- Fel Spray
 })
 
 --------------------------------------------------------------------------------

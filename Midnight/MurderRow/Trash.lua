@@ -6,17 +6,17 @@ local mod, CL = BigWigs:NewBoss("Murder Row Trash", 2813)
 if not mod then return end
 mod:SetTrashModule(true)
 mod:SetAuraData({
-	{1216300}, -- Cutpurse
-	{1216529}, -- Shield Bash
-	{1295035}, -- Glaive Toss
-	{1217633}, -- Corroding Spittle
-	{1216590}, -- Heartstop Poison
-	{1311136}, -- Sharp Nail
-	{1218508}, -- Disguised
-	{1295427}, -- Flay
-	{1217973, soundOnApplied = "alarm"}, -- Curse of Doom
-	{1218187}, -- Fel Beam
-	{1294870, soundOnApplied = "underyou"}, -- Fel-Scarred Earth
+	{1216300, tip = "A Cutpurse has stolen from you."}, -- Cutpurse
+	{1216529, tip = "You've been stunned by Shield Bash."}, -- Shield Bash
+	{1295035, tip = "You've been hit by a thrown Glaive Toss."}, -- Glaive Toss
+	{1217633, dispel = "Poison", tip = "A corrosive DoT from Corroding Spittle, dispel it before it gets out of hand."}, -- Corroding Spittle
+	{1216590, dispel = "Poison", tip = "A stacking poison DoT from Heartstop Poison, dispel it before it gets out of hand."}, -- Heartstop Poison
+	{1311136, tip = "A bleed effect from Sharp Nail, heal through it."}, -- Sharp Nail
+	{1218508, tip = "The target is disguised, hiding their true identity."}, -- Disguised
+	{1295427, tip = "A bleed effect from Flay, heal through it."}, -- Flay
+	{1217973, soundOnApplied = "alarm", dispel = "Curse", tip = "A delayed burst of damage from Curse of Doom, dispel it before it detonates."}, -- Curse of Doom
+	{1218187, dispel = "Magic", tip = "A lingering fel effect from Fel Beam, dispel it or heal through it."}, -- Fel Beam
+	{1294870, soundOnApplied = "underyou", tip = "You're standing in Fel-Scarred Earth, move out of it."}, -- Fel-Scarred Earth
 })
 
 --------------------------------------------------------------------------------
