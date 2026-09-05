@@ -7,10 +7,10 @@ if not mod then return end
 mod:SetEncounterID(3458)
 mod:SetRespawnTime(30)
 mod:SetAuraData({
-	{1300885}, -- Ritual of the Fang
-	{1300894, soundOnApplied = "info", soundOnAppliedDose = "none"}, -- Ritual Venom
-	{1301508}, -- Boneslicer
-	{1301231, soundOnApplied = "underyou", note = CL.debuffUnderYouNote}, -- Bloodletting
+	{1300885, dispel = "Curse", tip = "A dark ritual effect channeled by Zul'jan."}, -- Ritual of the Fang
+	{1300894, soundOnApplied = "info", soundOnAppliedDose = "none", dispel = "Poison", tip = "A venomous effect applied as part of the ritual."}, -- Ritual Venom
+	{1301508, tip = "A physical strike that slices with a bone weapon."}, -- Boneslicer
+	{1301231, soundOnApplied = "underyou", note = CL.debuffUnderYouNote, dispel = "Disease", tip = "Causes a player to bleed, dealing damage over time."}, -- Bloodletting
 })
 
 --------------------------------------------------------------------------------

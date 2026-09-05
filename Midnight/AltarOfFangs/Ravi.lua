@@ -7,9 +7,9 @@ if not mod then return end
 mod:SetEncounterID(3456)
 mod:SetRespawnTime(30)
 mod:SetAuraData({
-	{1297876, note = CL.debuffPossibleAfterCastNote:format(mod:SpellName(1296220))}, -- Triple Shot
-	{1307700, soundOnAppliedDose = "none", note = CL.debuffDotAfterCastNote:format(mod:SpellName(1296216))}, -- Carrion Burst
-	{1307915, soundOnApplied = "alarm", note = CL.debuffHitByCastNote:format(mod:SpellName(1307894))}, -- Ravenous Stomp
+	{1297876, note = CL.debuffPossibleAfterCastNote:format(mod:SpellName(1296220)), dispel = "Poison", tip = "Rav'i shoots globs of venom at 3 enemies, inflicting Nature damage plus additional Nature damage to anyone within 5 yards every 1 sec for 10 sec."}, -- Triple Shot
+	{1307700, soundOnAppliedDose = "none", note = CL.debuffDotAfterCastNote:format(mod:SpellName(1296216)), dispel = "Disease", tip = "A damage-over-time effect that lingers after Ssscavenging is cast."}, -- Carrion Burst
+	{1307915, soundOnApplied = "alarm", note = CL.debuffHitByCastNote:format(mod:SpellName(1307894)), tip = "Applies to players hit by the Ravenous Stomp cast."}, -- Ravenous Stomp
 })
 mod:SetStage(1)
 

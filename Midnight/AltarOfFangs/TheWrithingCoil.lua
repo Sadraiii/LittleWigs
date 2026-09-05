@@ -7,10 +7,10 @@ if not mod then return end
 mod:SetEncounterID(3457)
 mod:SetRespawnTime(30)
 mod:SetAuraData({
-	{1299080, soundOnAppliedDose = "none"}, -- Death Rattle
-	{1300503}, -- Spiteful Hunt
-	{1310974}, -- Toxic Atrophy
-	{1299189}, -- Synchronized Venom
+	{1299080, soundOnAppliedDose = "none", dispel = "Disease", tip = "A withering effect that stacks and deals increasing damage over time."}, -- Death Rattle
+	{1300503, dispel = "Curse", tip = "Marks a player as the target of a vicious hunt."}, -- Spiteful Hunt
+	{1310974, dispel = "Poison", tip = "A toxin that saps strength the longer it lingers."}, -- Toxic Atrophy
+	{1299189, dispel = "Poison", tip = "A venom effect that is applied to multiple players at once."}, -- Synchronized Venom
 })
 mod:SetStage(1)
 
