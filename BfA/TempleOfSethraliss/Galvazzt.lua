@@ -71,9 +71,9 @@ end
 
 if mod:Retail() then -- Midnight+
 	mod:SetAuraData({
-		{266923, soundOnApplied = "info", note = CL.debuffWalkIntoObjectNote:format(mod:SpellName(1291618))}, -- Galvanize
-		{1291815, soundOnApplied = "underyou", note = CL.debuffUnderYouNote}, -- Induction Field
-		{266512, duration = 20, note = CL.debuffFailureGroupSoakNote:format(mod:SpellName(1291618))}, -- Consume Charge
+		{266923, soundOnApplied = "info", note = CL.debuffWalkIntoObjectNote:format(mod:SpellName(1291618)), tip = "A stacking Galvanize debuff, avoid letting it build too high."}, -- Galvanize
+		{1291815, soundOnApplied = "underyou", note = CL.debuffUnderYouNote, tip = "You're standing in an Induction Field, move out of it."}, -- Induction Field
+		{266512, duration = 20, note = CL.debuffFailureGroupSoakNote:format(mod:SpellName(1291618)), tip = "The raid failed to soak Consume Charge and is taking the resulting damage."}, -- Consume Charge
 	})
 end
 

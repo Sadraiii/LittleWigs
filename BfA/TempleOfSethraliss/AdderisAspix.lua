@@ -90,11 +90,11 @@ end
 
 if mod:Retail() then -- Midnight+
 	mod:SetAuraData({
-		{1288457, duration = 4, note = CL.debuffDotAfterCastNote:format(mod:SpellName(1288457))}, -- Gust
-		{1289059, duration = 4, note = CL.debuffTargetedNote:format(mod:SpellName(1289059))}, -- Gale Force
-		{1288874, duration = 5, soundOnRemoved = "alarm", note = CL.debuffTargetedNote:format(mod:SpellName(1311805))}, -- Tempest Winds
-		{1288885, duration = 4, mechanic = "silenced", note = CL.debuffFailureMoveFromCastNote:format(mod:SpellName(1311805))}, -- Tempest Winds
-		{1288074, duration = 4.5, soundOnRemoved = "alarm", note = CL.debuffTargetedNote:format(mod:SpellName(1288049))}, -- Thunder and Lightning
+		{1288457, duration = 4, note = CL.debuffDotAfterCastNote:format(mod:SpellName(1288457)), tip = "A DoT from Gust, heal through it."}, -- Gust
+		{1289059, duration = 4, note = CL.debuffTargetedNote:format(mod:SpellName(1289059)), tip = "You've been targeted by Gale Force, get ready to move away from the raid."}, -- Gale Force
+		{1288874, duration = 5, soundOnRemoved = "alarm", note = CL.debuffTargetedNote:format(mod:SpellName(1311805)), tip = "You've been targeted by Tempest Winds, get ready to move away from the raid."}, -- Tempest Winds
+		{1288885, duration = 4, mechanic = "silenced", note = CL.debuffFailureMoveFromCastNote:format(mod:SpellName(1311805)), tip = "You failed to move away from Tempest Winds and are silenced as a result."}, -- Tempest Winds
+		{1288074, duration = 4.5, soundOnRemoved = "alarm", note = CL.debuffTargetedNote:format(mod:SpellName(1288049)), tip = "You've been targeted by Thunder and Lightning, get ready to move away from the raid."}, -- Thunder and Lightning
 	})
 end
 

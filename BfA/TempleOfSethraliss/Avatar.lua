@@ -100,13 +100,13 @@ end
 
 if mod:Retail() then -- Midnight+
 	mod:SetAuraData({
-		{1300714, duration = 20, soundOnAppliedDose = "none", note = CL.debuffTargetedNote:format(mod:SpellName(1300702))}, -- Shadowlash
-		{1300877, duration = 15, soundOnAppliedDose = "none", note = CL.debuffWalkIntoObjectNote:format(mod:SpellName(1300869))}, -- Corruption
-		{1303446, duration = 10, note = CL.debuffTankAfterCastNote:format(mod:SpellName(1300803))}, -- Tainted Strike
-		{1302618, duration = 8, note = CL.debuffPossibleAfterCastNote:format(mod:SpellName(1302616))}, -- Vile Charge
-		{1311979, duration = 4, note = CL.debuffPossibleAfterCastNote:format(mod:SpellName(1302153))}, -- Latent Hex
-		{1302158, duration = 8, note = CL.debuffFailureInterruptNote:format(mod:SpellName(1302158))}, -- Flame Shock
-		{1302826, duration = 3, soundOnAppliedDose = "none", note = CL.debuffGroupAfterCastNote:format(mod:SpellName(1302826))}, -- Corruption Burst
+		{1300714, duration = 20, soundOnAppliedDose = "none", note = CL.debuffTargetedNote:format(mod:SpellName(1300702)), tip = "You've been targeted by Shadowlash, get ready to move away from the raid."}, -- Shadowlash
+		{1300877, duration = 15, soundOnAppliedDose = "none", dispel = "Curse", note = CL.debuffWalkIntoObjectNote:format(mod:SpellName(1300869)), tip = "A stacking Corruption debuff, dispel it before it gets out of hand."}, -- Corruption
+		{1303446, duration = 10, note = CL.debuffTankAfterCastNote:format(mod:SpellName(1300803)), tip = "The tank was hit by Tainted Strike."}, -- Tainted Strike
+		{1302618, duration = 8, note = CL.debuffPossibleAfterCastNote:format(mod:SpellName(1302616)), tip = "You've been hit by Vile Charge, get ready to move away from the raid."}, -- Vile Charge
+		{1311979, duration = 4, dispel = "Curse", note = CL.debuffPossibleAfterCastNote:format(mod:SpellName(1302153)), tip = "A Latent Hex is on you, dispel it before it triggers."}, -- Latent Hex
+		{1302158, duration = 8, note = CL.debuffFailureInterruptNote:format(mod:SpellName(1302158)), tip = "You failed to interrupt Flame Shock and are taking the resulting damage."}, -- Flame Shock
+		{1302826, duration = 3, soundOnAppliedDose = "none", dispel = "Curse", note = CL.debuffGroupAfterCastNote:format(mod:SpellName(1302826)), tip = "A raid-wide Corruption Burst, dispel it before it gets out of hand."}, -- Corruption Burst
 	})
 end
 
